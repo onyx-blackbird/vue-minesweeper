@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+}
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #333333;
+}
+header, p {
+	margin: 20px;
+	text-align: center;
+}
+select, button {
+	margin: 10px 20px;
+	width: 150px;
+}
+
+.score {
+	line-height: 20px;
+	margin: 10px;
+	text-align: center;
+}
+.game-over {
+	color: red;
+	font-size: large;
+	margin: 10px;
+	text-align: center;
+}
+.winner {
+	color: green;
+	font-size: large;
+	margin: 10px;
+	text-align: center;
+}
+.grid {
+	border: 2px solid #005500;
+	background: repeating-conic-gradient(#00DD00 0% 25%, #00BB00 0% 50%) 50% / 40px 40px;
+	margin: auto;
+	position: relative;
+}
