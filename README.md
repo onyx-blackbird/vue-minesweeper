@@ -1,6 +1,6 @@
 # vue-snake
 
-This is just a small side project to implement the classic mineweeper game with Vue 3
+This is just a small side project to implement the classic minesweeper game with Vue 3
 
 ## Project Setup
 
