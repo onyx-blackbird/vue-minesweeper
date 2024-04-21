@@ -1,4 +1,4 @@
-# vue-snake
+# vue-minesweeper
 
 This is just a small side project to implement the classic minesweeper game with Vue 3
 
