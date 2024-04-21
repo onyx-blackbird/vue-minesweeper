@@ -78,6 +78,10 @@ function onClick(field: FieldProps): void {
 	field.isUncovered = true;
 	if (field.hasMine) {
 		isGameOver.value = true;
+		fields.forEach((row) =>
+			row.forEach((field) => (field.isUncovered = true)),
+		);
+		return;
 	} else {
 		field.mineCount = calculateMines(field);
 		if (field.mineCount === 0) {
@@ -107,8 +111,8 @@ function onGameOverClick(e: Event): void {
 <template>
 	<p>Click on the fields to uncover them, but mind the mines!</p>
 	<p>
-		Use the right mouse button to flag potential mines, right click again to
-		remove the flag.
+		Use the right mouse button - or long click on mobile - to flag potential
+		mines, right click again to remove the flag.
 	</p>
 	<p>The goal is to uncover all fields that are no mines.</p>
 	<p>There are {{ gameSize.mines }} mines on the field.</p>

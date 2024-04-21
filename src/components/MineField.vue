@@ -49,6 +49,7 @@ const fieldSize: String = GridSize + 'px';
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
+	user-select: none;
 }
 .field:hover {
 	box-shadow: inset 0px 0px 0px 2px #009900;
